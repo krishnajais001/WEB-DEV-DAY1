@@ -3,29 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
+    <title>Card Task</title>
     <style>
         *{
-            margin: 0;
             padding: 0;
+            margin: 0;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
-       .div{
+       div.card-intro{
+        height:66vh;
+        width: 50vw ;
         border: 2px solid black;
-        width: 400px;
-        height: 400px;
-        padding: 100px;
-        margin: 10px;
-       }
-       .div:hover{
-        background-color: red;
-       }
+     
+        padding: 2%;
+        margin: 2%;
+        }
+        img{
+      
+        border-radius: 3%;
+        width: 100%;
+        }
+
+        h2{
+            font-size: 2em;
+            font-weight:900;        
+        }
+        hr{
+             margin: 1em;
+        }
+        .price{
+            font-size: 2em;
+            font-weight:900; 
+            margin: 0 8px;
+        }
+        #orignal-price{
+            color: rgb(101, 101, 240);
+        }
+        #discount-price{
+            
+            text-decoration: line-through;
+        }
+        #discount-show{
+            
+            background-color: rgb(58, 226, 119);
+            border-radius: 9px;
+            color: white;
+        font-weight: 900;
+            padding: 8px 20px;
+            margin: 0px 10px;
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
-<div class="div">
-
+    <div class="card-intro">
+    <img src="babbar.image.jpg" alt="phto" class="phto">
+    <h2>Web Development Master</h2>
+    <h2>Course @dot Batch</h2>
+    <hr>
+   <span class="price" id="orignal-price">&#8377 4500</span>
+   <span  class="price" id="discount-price">&#8377 6999</span>
+    <span id="discount-show"> 42% off</span>
 </div>
-
 </body>
 </html>
